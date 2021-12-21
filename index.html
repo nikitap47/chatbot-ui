@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>ChatBot UI</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="./index.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=DM+Sans&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <div id="container">
+            <h2>ChatBot UI Assignment</h2>
+            <!--Open ChatBot logo-->
+            <div class="chatbotLogo" id="bot">
+                <img src="./bot.PNG" >
+            </div>
+            <p id="comment">Hi, I am Iris. Please ask me your queries.</p>
+            <!--End Chatbot logo-->
+
+            <!--ChatBot Form-->
+            <div id="chat">
+                <div id="chatTop">
+                    <div id="chatHeading">
+                        <h3>IRIS</h3>
+                        <div id="hello">
+                            <p>Hello</p>
+                            <img src="./wave.PNG">
+                        </div>
+                        <p>I am Iris, a Virtual Assistant <br>
+                            How may I help you?
+                        </p>
+                    </div>
+                </div>
+                <div class="chatbotLogo" id="chatSectionBot">
+                    <img src="./bot.PNG">
+                </div>
+                <div id="chatSection">
+                    <p id="chatSectionTop">Frequently Asked Questions</p>
+                    <div id="questionDiv"><span id="questionMark">?</span></div>
+                    <div class="bullets" id="bullet-1">
+                        <div class="bulletPoints"></div>
+                        <p class="bulletPointInfo">Can I redeem my FB before the original term?</p>
+                    </div>
+                    <div class="bullets" id="bullet-2">
+                        <div class="bulletPoints"></div>
+                        <p class="bulletPointInfo">How do I pay my Credit card bill?</p>
+                    </div>
+                    <div class="bullets" id="bullet-3">
+                        <div class="bulletPoints"></div>
+                        <p class="bulletPointInfo">How can I get my Account Statement?</p>
+                    </div>
+                    <div class="bullets" id="bullet-4">
+                        <div class="bulletPoints"></div>
+                        <p class="bulletPointInfo">What is the tenure of Fixed Deposit?</p>
+                    </div>
+                    <div id="startConvo">
+                        <div id="startConvoPart">
+                            <img src="./chat.PNG">
+                            <span id="startSpan">Start a New Conversation</span>
+                        </div>
+                    </div>
+                </div>
+                <div id="chatBack"></div>
+            </div>
+            <!--End Chatbot Form-->
+        </div>
+        <script type="text/javascript">
+            document.getElementById('bot').onclick = () => {
+                var x = document.getElementById('chat');
+                if(x.style.display === "block"){
+                    x.style.display = "none";
+                }else{
+                    x.style.display = "block";
+                }
+            }
+            document.getElementById('bot').onmouseover = () => {
+                var z = document.getElementById('comment');
+                if(z.style.display === "block"){
+                    z.style.display = "none";
+                }else{
+                    z.style.display = "block";
+                }
+            }
+        </script>
+    </body>
+</html>
